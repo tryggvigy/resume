@@ -1,0 +1,17 @@
+{
+  "name": "resume",
+  "description": "My resume, angularized.",
+  "version": "0.0.0",
+  "homepage": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": ">=1.2.x",
+    "angular-mocks": "~1.2.x",
+    "angular-route": "~1.2.x",
+    "angular-animate": "~1.2.x",
+    "jquery": ">=1.7.x",
+    "angular-translate": "~2.3.0",
+    "angular-translate-loader-static-files": "~2.3.0"
+  }
+}

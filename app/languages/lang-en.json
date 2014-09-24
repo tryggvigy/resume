@@ -1,0 +1,18 @@
+{
+    "PROFILE_HEADLINE": "Software Engineering Resume",
+    "BUTTON_TEXT_EN": "english",
+    "BUTTON_TEXT_IS": "icelandic",
+    "PROFILE_TIMER_HEADING": "Time since Hello World:",
+    "PROFILE_TIMER_YEARS": "years",
+    "PAGE_PROFILE": "Profile",
+    "PAGE_SKILLS": "Skills",
+    "PAGE_EXPERIENCE": "Experience",
+    "PAGE_HOBBIES": "Hobbies",
+    "SKILLS_WEB": "Web",
+    "SKILLS_LANGUAGES": "Languages",
+    "SKILLS_TOOLS": "Tools",
+    "SKILLS_METHODOLOGIES": "Methodoligies",
+    "SKILLS_BACKEND": "Backend",
+    "SKILLS_OPERATING_SYSTEMS": "Operating Systems",
+    "SKILLS_SEARCH": "Search..."
+}

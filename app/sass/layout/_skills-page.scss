@@ -1,0 +1,75 @@
+#skillsPage {
+  font-family: sans-serif;
+  padding-left: $nav-map-width;
+  margin-left: 7rem;
+
+  .searchbox {
+    padding-top: 4rem;
+    .spyglass {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select:none;
+        //hack to get the magnification glass stackicon to fix itself.
+        span:before {text-shadow: none;content:"\e067";color:#d1ecec;color: rgba(98, 180, 180, 0.4);}
+    }
+    input {
+      padding-left: 8px;
+      outline-width: 0;
+      border:solid 1px #ccc;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+    }
+  }
+
+  table {
+    clear: left;
+    width: 70%;
+    margin-top: 3rem;
+
+    tr{
+      &:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+      &:hover {
+        background-color: #f1f1f1;
+      }
+    }
+
+    .skill_category {
+      border-top: 1px solid #c8c8c8;
+      td {
+        padding: 1rem;
+        line-height: 1.5rem;
+      }
+
+      .skill_heading {
+        width: 12rem;
+        color: white;
+        vertical-align: top;
+        padding-right: 4rem;
+        cursor: default;
+        span {
+          padding: 2px;
+          border-radius: 3px;
+          font-weight: bold;
+        }
+        #webskills {background-color: #d1475b;}
+        #langskills {background-color: #468847;}
+        #toolsskills {background-color: #333;}
+        #methodskills {background-color: #3a87ad;}
+        #systemsbackend {background-color: #999;}
+        #systemsskills {background-color: #f89406;}
+      }
+
+      .skill_content {
+        font-size: 1.5rem;
+        span {
+          @include content-after-but-skip-last(", ");
+        }
+      }
+
+    } //skill_category end.
+
+  }
+}

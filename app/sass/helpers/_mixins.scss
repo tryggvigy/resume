@@ -1,0 +1,97 @@
+
+//LAYOUT
+@mixin center-block {
+  display     : block;
+  margin-left : auto;
+  margin-right: auto;
+
+}
+
+@mixin absolute-pos-at($left, $top) {
+  left    : $left;
+  position: absolute;
+  top     : $top;
+}
+
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  /* fallback/image non-cover color */
+  background-color: $from;
+
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+
+  /* IE10+ */
+  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+
+  /* Standard */
+  background: linear-gradient(to right, $from 0%, $to $stop);
+
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+@mixin vertical-gradient($start: #000, $stop: #FFF) { background: ($start + $stop) / 2;
+    background: -webkit-gradient(linear, left top, left bottom, from($start), to($stop));
+    background: -moz-linear-gradient(center top, $start 0%, $stop 100%);
+    background: -moz-gradient(center top, $start 0%, $stop 100%);
+}
+
+@mixin grid-list($width, $color) { //TO-DO: fix ugly mixin!
+  ul {
+    padding: 0;
+    text-align: center;
+    width     : $width;
+    li {
+      display       : inline-block;
+      vertical-align: top;
+      margin: 5px;
+      margin-left: 2rem;
+
+      a {
+        color: $color;
+        text-decoration: none;
+
+        &:hover {
+           color:#00A0C6;
+           text-decoration:none;
+           cursor:pointer;
+        }
+      }
+    }
+  }
+}
+
+/* Button Style Mixin */
+@mixin sexy-button($color, $font-color) {
+  color: $font-color;
+  font-weight: bold;
+  padding: .4em .7em;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.1);
+  border-top: none;
+  @include single-text-shadow;
+  @include border-radius(20px);
+  @include background-image($color);
+  @include box-shadow(rgba(0,0,0,.3) 0 2px 3px, inset rgba(255,255,255,.2) 0 2px 0);
+    &:active {
+     top: 1px;
+     @include box-shadow(inset rgba(255,255,255,.2) 0 2px 0);
+    }
+}
+
+@mixin content-after-but-skip-last($content) {
+  &:not(:last-child) {
+   &::after {
+     content: $content;
+   }
+  }
+}

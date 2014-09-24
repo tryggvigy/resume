@@ -1,0 +1,47 @@
+{
+  "timeline":{
+    "headline":"Mín leið",
+    "type":"default",
+    "text":"Kíktu á ferilinn minn og mín verkefni...",
+    "startDate":"2009,06,23",
+    "asset": {
+    "media":"static/images/jpg/me.jpg",
+    "caption":"Þetta er ég"
+    },
+    "date": [{
+      "startDate":"2009,08,20",
+      "endDate":"2012,06,15",
+      "headline":"Kvennaskólinn í Reykjavík",
+      "text":"<p>Graduated from nature sciences.<p>",
+      "asset":{
+        "media":"<p>Award for highest average grade in Physics.</p>",
+        "thumbnail": "../dist/static/images/thumbnails/kvenno.gif"
+      }
+    },{
+      "startDate":"2012,08,23",
+      "endDate":"2015,06,11",
+      "headline":"Háskóli Íslands - Hugbúnaðarverkfræði",
+      "text":"<p>Hóf nám í Hugbúnaðarverkfræði við Háskóla Íslands.</p>"
+    },{
+      "startDate":"2012,11,15",
+      "endDate":"2013,05,10",
+      "headline":"Kennari hjá Nóbel námsbúðum.",
+      "text":"<p>Kenndi nemendum í Kvennaskólanum eðlisfræði og stærðfræði.</p>"
+    },{
+      "startDate":"2013,05,10",
+      "endDate":"2013,08,20",
+      "headline":"Norðurál - Upplýsingatæknideild",
+      "text":"<p>Meðlimur í upplýsingatæknideild Norðuráls.</p><p>Ýmis sysadmin störf, vakt á ticket system (spicework),uppsetning véla. Ég vann einnig að þróun MVC gagnagrunnslausnar fyrir upplýsingar um vélar fyrirtækisins.</p>"
+    },{
+      "startDate":"2014,05,10",
+      "endDate":"2014,08,30",
+      "headline":"Marel - Sumarstarfsmaður.",
+      "text":"<p>Þróun veflausna.</p>"
+    },{
+      "startDate":"2014,08,23",
+      "endDate":"2014,12,15",
+      "headline":"Dæmatímakennari - Vefforritun.",
+      "text":"<p>Dæmatímakennsla í áfanganum <a href='https://ugla.hi.is/kennsluskra/index.php?tab=nam&chapter=namskeid&id=08715320146' target='_blank'>TÖL306G Vefforritun</a></p>"
+    }]
+  }
+}

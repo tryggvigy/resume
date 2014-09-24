@@ -1,0 +1,68 @@
+<div id="skillsPage">
+
+  <div class="searchbox">
+    <span class="st-icon-search-alt st-multi-color st-shape-icon spyglass"><span></span></span>
+    <input type="search" ng-model="query" placeholder="{{'SKILLS_SEARCH' | translate}}">
+  </div>
+
+  <table>
+    <tbody>
+
+      <tr class="skill_category">
+        <td class="skill_heading">
+          <span id="webskills" translate="SKILLS_WEB">Web</span>
+        </td>
+        <td class="skill_content">
+          <span ng-repeat="skill in skillsCtrl.webSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+        </td>
+      </tr>
+
+      <tr class="skill_category">
+        <td class="skill_heading">
+          <span id="langskills" translate="SKILLS_LANGUAGES">Languages</span>
+        </td>
+        <td class="skill_content">
+          <span ng-repeat="skill in skillsCtrl.langSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+        </td>
+      </tr>
+
+        <tr class="skill_category">
+          <td class="skill_heading">
+            <span id="toolsskills" translate="SKILLS_TOOLS">Tools</span>
+          </td>
+          <td class="skill_content">
+            <span ng-repeat="skill in skillsCtrl.toolSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+          </td>
+        </tr>
+
+        <tr class="skill_category">
+          <td class="skill_heading">
+            <span id="methodskills" translate="SKILLS_METHODOLOGIES">Methodologies</span>
+          </td>
+          <td class="skill_content">
+            <span ng-repeat="skill in skillsCtrl.methodSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+          </td>
+        </tr>
+
+        <tr class="skill_category">
+          <td class="skill_heading">
+            <span id="systemsbackend" translate="SKILLS_BACKEND">Backend</span>
+          </td>
+          <td class="skill_content">
+            <span ng-repeat="skill in skillsCtrl.backendSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+          </td>
+        </tr>
+
+        <tr class="skill_category">
+          <td class="skill_heading">
+            <span id="systemsskills" translate="SKILLS_OPERATING_SYSTEMS">Operating systems</span>
+          </td>
+          <td class="skill_content">
+            <span ng-repeat="skill in skillsCtrl.systemSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+          </td>
+        </tr>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

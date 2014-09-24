@@ -1,0 +1,31 @@
+{
+  "globalstrict": true,
+  "validthis": true,
+  "browser": true,
+  "devel": true,
+  "globals": {
+    "angular": false,
+    "$": true,
+    "browser": false,
+    "element": false,
+    "by": false,
+
+    "describe": false,
+    "beforeEach": false,
+    "it": false,
+    "expect": false,
+
+    "$scope" : true,
+    "ProfileCtrl" : true,
+    "MainCtrl": true,
+    "SkillsCtrl": true,
+    "ExperienceCtrl": true,
+
+    "animateOnHover": true,
+    "timeSince": true,
+    "createStoryJS": true,
+
+    "knowledgeFactory": true,
+    "languageFactory": true
+  }
+}

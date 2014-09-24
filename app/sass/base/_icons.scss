@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "myfont";
+	src: url('../static/fonts/Icons/myfont.eot');
+	src: url('../static/fonts/Icons/myfont.eot?#iefix') format('eot'),
+		url('../static/fonts/Icons/myfont.woff') format('woff'),
+		url('../static/fonts/Icons/myfont.ttf') format('truetype'),
+		url('../static/fonts/Icons/myfont.svg#myfont') format('svg');
+}
+
+.icon:before {
+	font-family: "myfont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-experience:before {
+	content: "\E001";
+}
+
+.icon-experience2:before {
+	content: "\E002";
+}
+
+.icon-hobby:before {
+	content: "\E003";
+}
+
+.icon-hoppy2:before {
+	content: "\E004";
+}
+
+.icon-profile:before {
+	content: "\E005";
+}
+
+.icon-skills:before {
+	content: "\E006";
+}
+
+.icon-skills2:before {
+	content: "\E007";
+}

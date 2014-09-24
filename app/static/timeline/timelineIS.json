@@ -1,0 +1,64 @@
+{
+  "timeline":{
+    "headline":"Mín leið",
+    "type":"default",
+    "text":"Kíktu á ferilinn minn og mín verkefni...",
+    "startDate":"2009,06,23",
+    "asset": {
+    "media":"static/images/jpg/me.jpg",
+    "caption":"Þetta er ég"
+    },
+    "date": [{
+      "startDate":"2009,08,20",
+      "endDate":"2012,06,15",
+      "headline":"Kvennaskólinn í Reykjavík",
+      "text":"<p>Útskrifaðist frá náttúrufræðibraut.<p>",
+      "asset":{
+        "media":"<p>Viðurkenning fyrir hæstu einkunn í eðlisfræði.</p>",
+        "thumbnail": "../dist/static/images/thumbnails/kvenno.gif"
+      }
+    },{
+      "startDate":"2012,08,23",
+      "endDate":"2015,06,11",
+      "headline":"Háskóli Íslands - Hugbúnaðarverkfræði",
+      "asset":{
+        "media":"<p>Hóf nám í Hugbúnaðarverkfræði við Háskóla Íslands.</p>",
+        "thumbnail": "../dist/static/images/thumbnails/HI.jpg"
+      }
+    },{
+      "startDate":"2012,11,15",
+      "endDate":"2013,05,10",
+      "headline":"Kennari hjá Nóbel námsbúðum.",
+      "asset":{
+        "media":"<p>Kenndi nemendum í Kvennaskólanum eðlisfræði og stærðfræði.</p>",
+        "thumbnail": "../dist/static/images/thumbnails/nobel.png"
+      }
+    },{
+      "startDate":"2013,05,10",
+      "endDate":"2013,08,20",
+      "headline":"Norðurál - Upplýsingatæknideild",
+      "text":"<p>Meðlimur í upplýsingatæknideild Norðuráls.</p>",
+      "asset":{
+        "media":"<p>Ýmis sysadmin störf, vakt á ticket system (spicework), uppsetning véla.</p><p>Ég vann einnig að þróun MVC gagnagrunnslausnar fyrir upplýsingar um vélar fyrirtækisins.</p>",
+        "thumbnail": "../dist/static/images/thumbnails/nordural.png"
+      }
+    },{
+      "startDate":"2014,05,10",
+      "endDate":"2014,08,30",
+      "headline":"Marel - Sumarstarfsmaður.",
+      "text":"<p>Þróun veflausna.</p>",
+      "asset":{
+        "media":"<p>foobar</p>",
+        "thumbnail": "../dist/static/images/thumbnails/marel.jpg"
+      }
+    },{
+      "startDate":"2014,08,23",
+      "endDate":"2014,12,15",
+      "headline":"Dæmatímakennari - Vefforritun.",
+      "asset":{
+        "media":"<p>Dæmatímakennsla í áfanganum <a href='https://ugla.hi.is/kennsluskra/index.php?tab=nam&chapter=namskeid&id=08715320146' target='_blank'>TÖL306G Vefforritun</a></p>",
+        "thumbnail": "../dist/static/images/thumbnails/HI.jpg"
+      }
+    }]
+  }
+}

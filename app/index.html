@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" ng-app="ResumeApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Resume</title>
+  <link rel="stylesheet" href="../dist/css/main.css">
+  <link rel="stylesheet" href="../dist/static/3rd-party/css/stackicons-min.css">
+</head>
+
+
+<body ng-controller="MainCtrl as main">
+  <header>
+    <div id="resumeOwner">Tryggvi Gylfason</div>
+    <nav>
+      <div class = "resumeLinks">
+          <a class="st-icon-github st-multi-color st-shape-icon" href="http://github.com/tryggvigy" target="_blank"><span></span>Github</a>
+          <a class="st-icon-linkedin" href="https://www.linkedin.com/pub/tryggvi-gylfason/90/463/806" target="_blank">LinkedIn</a>
+      </div>
+    </nav>
+    <div class="languages">
+      <img ng-click="main.changeLanguage('is')" src="../dist/static/images/png/icelandic-flag.png" height="22" width="22">
+      <a ng-click="main.changeLanguage('is')" translate="BUTTON_TEXT_IS">
+        icelandic
+      </a>
+      <img ng-click="main.changeLanguage('en')" src="../dist/static/images/png/british-flag.png" height="22" width="22">
+      <a ng-click="main.changeLanguage('en')" translate="BUTTON_TEXT_EN">
+        english
+      </a>
+    </div>
+  </header>
+
+  <aside class="nav-map">
+    <ul class="nav-btns">
+      <li>
+        <a class="icon icon-profile" href="#Profile"><div translate="PAGE_PROFILE">Profile</div></a>
+      </li>
+      <li>
+        <a class="icon icon-skills" href="#Skills"><div translate="PAGE_SKILLS">Skills</div></a>
+      </li>
+      <li>
+        <a class="icon icon-experience2 bars" href="#Experience"><div translate="PAGE_EXPERIENCE">Experience</div></a>
+      </li>
+      <li>
+        <a class="icon icon-hobby mask" href="#Hobbies"><div translate="PAGE_HOBBIES">Hobbies</div></a>
+      </li>
+    </ul>
+  </aside>
+
+  <main id="appwrap" class="view-container" role="main">
+    <div ng-view class="fade"></div>
+  </main>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+  <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+  <script src="../dist/static/timeline/lib/jquery-min.js"></script>
+  <script src="../dist/static/timeline/js/storyjs-embed.js"></script>
+  <script src="../dist/main.js"></script>
+</body>
+
+</html>
