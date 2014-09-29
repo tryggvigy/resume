@@ -157,6 +157,7 @@ function knowledgeFactory() {
     return _backendSkills;
   }
 
+
   var factory = {
     getWordCloudWords: getWordCloudWords,
     getWebSkills: getWebSkills,

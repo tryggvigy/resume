@@ -1,0 +1,68 @@
+#hobbiesPage {
+    margin-left: 24rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
+  .hobbies-wrapper {
+    //background-color:rgba(255,255,255,0.15);
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    .parallex_column{
+      height: 16rem;
+      font-family: "Volkhov";
+      font-size: 1.5rem;
+      color: black;
+      h2 {font-size: 3rem;}
+      h3 {
+        font-family: "sans-serif";
+        font-size: 1.7rem;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+      p, a, span{
+        text-align: justify;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(24, 148, 205);
+      }
+    }
+    .parallex_column:hover > .rollover-pic {
+      opacity: 0;
+    }
+    .parallex_column:hover > .rollover-content {
+      opacity: 1;
+    }
+  }
+  .swim_img {background-image: url("../static/images/jpg/swimming.jpg");}
+  .diving_img {background-image: url("../static/images/jpg/diving.jpg");}
+  .spray_img {background-image: url("../static/images/jpg/stencil.jpg");}
+
+  .rollover-pic {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index: -1;
+    width: 100%;
+    opacity: 1;
+    height: $parallex-col-height;
+    @include parallex-position();
+  }
+  .rollover-content {
+    opacity: 0;
+    width:100%;
+    @include parallex-position();
+    .rollover-left {
+      margin-top: -5rem;
+      float:left;
+      width: 35%;
+    }
+    .rollover-right {
+      margin-top: -5rem;
+      float:right;
+      width: 35%;
+
+    }
+  }
+}

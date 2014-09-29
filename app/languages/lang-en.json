@@ -14,5 +14,19 @@
     "SKILLS_METHODOLOGIES": "Methodoligies",
     "SKILLS_BACKEND": "Backend",
     "SKILLS_OPERATING_SYSTEMS": "Operating Systems",
-    "SKILLS_SEARCH": "Search..."
+    "SKILLS_SEARCH": "Search...",
+    "HOBBIES_SWIMMING_HEADING": "Swimming",
+    "HOBBIES_SWIMMING_SUB_HEADING": "Competitive",
+    "HOBBIES_SWIMMING_LEFT_CONTENT": "I have been swimming competitively since I was 10 years old. I have competed on many international tournaments. My main stroaks are breaststroke and butterfly.",
+    "HOBBIES_SWIMMING_RIGHT_CONTENT": "When I train at maximum intensity, I go nine times a week in the pool as well as three dry-land workouts. Morning practices start at 5:30 in the morning. Swimming is a hard but rewarding sport.",
+    "HOBBIES_DIVING_HEADING": "Diving",
+    "HOBBIES_DIVING_SUB_HEADING": "Discovery",
+    "HOBBIES_DIVING_LEFT_CONTENT": "I just recently started scuba-diving, I figured that with my experience from swimming, it would be a breeze.",
+    "HOBBIES_DIVING_RIGHT_CONTENT": "I dive because of the sense of freedom and calmness. The first time you take a breath underwater is an exhilarating experience.",
+    "HOBBIES_ART_HEADING": "Spray Art",
+    "HOBBIES_ART_SUB_HEADING": "Design",
+    "HOBBIES_ART_LEFT_CONTENT": "From time to time I like to create spray art. Mostly I give away the pieces I do for a birthday or something else.",
+    "HOBBIES_ART_RIGHT_CONTENT": "I do lots of stencil art which can be very time consuming, especially with multi-layered pieces.",
+    "HOBBIES_ART_PRE_LINK": "You can see some of my work in this ",
+    "HOBBIES_ART_LINK": "gallery."
 }

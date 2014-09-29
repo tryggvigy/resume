@@ -33,7 +33,7 @@ function timeSince($timeout, languageFactory) {
           var ss = Math.floor(dtMs / 1000);
           dtMs -= ss * 1000;
 
-          if(languageFactory.currLang === 'en')
+          if(languageFactory.getCurrLang() === 'en' || undefined)
             return yy+" years, "+dd+" days, "+hh+" hours, "+mm+" minutes, "+ss+" seconds";
           else
             return yy+" ár, "+dd+" dagar, "+hh+" klukkutímar, "+mm+" mínútur, "+ss+" sekúndur";

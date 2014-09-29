@@ -8,6 +8,7 @@ angular
   .controller('ProfileCtrl', ProfileCtrl)
   .controller('SkillsCtrl', SkillsCtrl)
   .controller('ExperienceCtrl', ExperienceCtrl)
+  .controller('HobbiesCtrl', HobbiesCtrl)
 
   .factory('knowledgeFactory', knowledgeFactory)
   .factory('languageFactory', languageFactory)
@@ -47,8 +48,12 @@ angular
         controller: 'ExperienceCtrl',
         controllerAs: 'expCtrl'
       }).
+      when('/Hobbies', {
+        templateUrl: '../dist/partials/templates/hobbies.html',
+        controller: 'HobbiesCtrl',
+        controllerAs: 'hobbiesCtrl'
+      }).
       otherwise({
         templateUrl: '../dist/partials/templates/404.html'
       });
-    //$locationProvider.html5Mode(true);
   }]);

@@ -5,7 +5,7 @@
     "text":"Check out my career and my projects...",
     "startDate":"2009,06,23",
     "asset": {
-    "media":"static/images/jpg/me.jpg",
+    "media":"../dist/static/images/jpg/me.jpg",
     "caption":"Thats me"
     },
     "date": [{

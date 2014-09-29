@@ -14,5 +14,19 @@
     "SKILLS_METHODOLOGIES": "Hugmyndafræði",
     "SKILLS_BACKEND": "Bakendinn",
     "SKILLS_OPERATING_SYSTEMS": "Stýrikerfi",
-    "SKILLS_SEARCH": "Leita..."
+    "SKILLS_SEARCH": "Leita...",
+    "HOBBIES_SWIMMING_HEADING": "Sund",
+    "HOBBIES_SWIMMING_SUB_HEADING": "Keppni",
+    "HOBBIES_SWIMMING_LEFT_CONTENT": "Ég hef æft sund síðan ég var 10 ára gamall. Ég hef kept á mörgum alþjóðlegum mótum. Aðalsundin mín eru bringusund og flugsund.",
+    "HOBBIES_SWIMMING_RIGHT_CONTENT": "Þegar ég er í fullri þjálfum tek ég níu sundæfingar á viku og að auki þrjár þrekæfingar á landi. Morgunæfingar byrja 5:30 á morgnanna. Sund er erfið en mjög gefandi íþrótt.",
+    "HOBBIES_DIVING_HEADING": "Köfun",
+    "HOBBIES_DIVING_SUB_HEADING": "Uppgötvun",
+    "HOBBIES_DIVING_LEFT_CONTENT": "Núna nýlega byrjaði ég að stunda köfun, ég hugsaði að með reynslunni minni frá sundi yrði köfun lítið mál.",
+    "HOBBIES_DIVING_RIGHT_CONTENT": "Þegar ég kafa finn ég fyrir algjörum frið og ró. Fyrsta sinn sem maður dregur að sér andann í kafi er frábær upplifun.",
+    "HOBBIES_ART_HEADING": "Sprey List",
+    "HOBBIES_ART_SUB_HEADING": "Hönnun",
+    "HOBBIES_ART_LEFT_CONTENT": "Af og til finnst mér gamana að búa til sprey listaverk. Ég gef flest verkin til vina minna á afmælum og þessháttar.",
+    "HOBBIES_ART_RIGHT_CONTENT": "Ég geri mikið af stenslamyndum sem geta tekið langan tíma, sérstaklega ef þær eru marglaga.",
+    "HOBBIES_ART_PRE_LINK": "Þú getur séð myndirnar mínar í þessu ",
+    "HOBBIES_ART_LINK": "galleríi."
 }

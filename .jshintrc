@@ -20,6 +20,7 @@
     "MainCtrl": true,
     "SkillsCtrl": true,
     "ExperienceCtrl": true,
+    "HobbiesCtrl": true,
 
     "animateOnHover": true,
     "timeSince": true,
