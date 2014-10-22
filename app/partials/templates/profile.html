@@ -10,11 +10,11 @@
 
     <div class="wordCloud-container">
       <a ng-repeat="word in profile.words"
-         ng-style="{'font-size': '{{word.impact}}', 'color': '{{word.color}}'}"
+         ng-style="{'font-size': '{{ ::word.impact }}', 'color': '{{ ::word.color }}'}"
          target="_blank"
-         href="{{word.info}}"
+         href="{{ ::word.info }}"
          animate-on-hover>
-        {{word.text}}
+        {{ ::word.text }}
       </a>
     </div>
 </main>

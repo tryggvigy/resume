@@ -13,17 +13,23 @@ header {
   min-height: 40px;
   line-height: 40px;
   font-size: 1.7rem;
+  @include bp($bp-smallScreen) {
+     position: static;
+     width: auto;
+  }
 
   #resumeOwner {
     float:left;
     margin-left: 3rem;
     font-size: 2rem;
+    @include bp($bp-smallScreen) {float: none; text-align:center; margin-left: 0;}
   }
 
   .languages {
     font-size: 1.1rem;
     float: right;
     margin-right: 2rem;
+    @include bp($bp-smallScreen) {float: none;}
 
     img {
       vertical-align: middle;
@@ -45,7 +51,6 @@ header {
     float: right;
     margin-right: 2rem;
     color: #08c;
-
     .resumeLinks {
       font-size: 1.4rem;
       a {
@@ -63,6 +68,14 @@ header {
   top: 50px;
   font-size: 3rem;
   @include grid-list($nav-map-width, #b0b0b0);
+  @include bp($bp-smallScreen) {margin-top: 1.5rem; position: static;
+    //resetting the gridlist with ul rule.
+    ul{
+      width: auto;
+      //remove margin, add padding top,left to be more finger friendly.
+      li {margin: 0; padding-right: 2rem; padding-top: 2rem;}
+    }
+  }
   div {
     font-size: 1rem;
     margin-top:-6px;
@@ -77,7 +90,6 @@ header {
 }
 
 #appwrap {
-    width: 74vw;
     position:relative;
     margin-top: 5%;
     font-size: 12px;

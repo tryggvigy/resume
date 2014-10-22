@@ -15,11 +15,12 @@ angular
 
   .directive('animateOnHover', animateOnHover)
   .directive('timeSince', timeSince)
+  .directive('timeLine', timeLine)
 
   .config(['$translateProvider',
   function($translateProvider) {
     $translateProvider.useStaticFilesLoader({
-    prefix: 'languages/lang-',
+    prefix: '../dist/json/languages/lang-',
     suffix: '.json'
     });
     $translateProvider.preferredLanguage('en');
@@ -29,9 +30,7 @@ angular
   function($routeProvider, $locationProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: '../dist/partials/templates/profile.html',
-        controller: 'ProfileCtrl',
-        controllerAs: 'profile'
+        redirectTo: '/Profile'
       }).
       when('/Profile', {
         templateUrl: '../dist/partials/templates/profile.html',

@@ -1,9 +1,9 @@
 logs/*
 !.gitkeep
 node_modules/
-tmp
 bower_components/
 dist/
-.sass-cache
+.sass-cache/
 balsamiq/
 stackicons-master/
+npm-debug.log

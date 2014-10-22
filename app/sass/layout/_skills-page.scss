@@ -2,6 +2,7 @@
   font-family: sans-serif;
   padding-left: $nav-map-width;
   margin-left: 7rem;
+  @include bp($bp-smallScreen) {margin-left: 0; padding-left: 0;}
 
   .searchbox {
     padding-top: 4rem;
@@ -59,7 +60,10 @@
         #toolsskills {background-color: #333;}
         #methodskills {background-color: #3a87ad;}
         #systemsbackend {background-color: #999;}
-        #systemsskills {background-color: #f89406;}
+        #systemsskills {background-color: #F59F25;}
+        #securityskills {background-color: #7D25A9;}
+        #engineeringskills {background-color: #D0DB3E;}
+        #scienceskills {background-color: #B98737;}
       }
 
       .skill_content {

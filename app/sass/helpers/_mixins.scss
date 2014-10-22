@@ -60,9 +60,9 @@
         text-decoration: none;
 
         &:hover {
-           color:#00A0C6;
-           text-decoration:none;
-           cursor:pointer;
+          color:#00A0C6;
+          text-decoration:none;
+          cursor:pointer;
         }
       }
     }
@@ -103,4 +103,20 @@
   -o-transition: opacity 1s ease-in-out;
   -ms-transition: opacity 1s ease-in-out;
   transition: opacity 0.3s ease-in-out;
+}
+
+@mixin bp($point) {
+  // output the mixin content inside of a media query
+  @if $point == $bp-xSmallScreen {
+      @media #{$bp-xSmallScreen} { @content; }
+    }
+    @else if $point == $bp-smallScreen {
+        @media #{$bp-smallScreen} { @content; }
+    }
+    @else if $point == $bp-mediumScreen {
+      @media #{$bp-mediumScreen} { @content; }
+    }
+    @else if $point == $bp-largeScreen {
+      @media #{$bp-largeScreen}  { @content; }
+    }
 }

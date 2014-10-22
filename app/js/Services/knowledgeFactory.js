@@ -82,8 +82,6 @@ function knowledgeFactory() {
     {text: 'Less'},
     {text: 'jQuery'},
     {text: 'AngularJS'},
-    {text: 'PHP'},
-    {text: 'Lua'},
     {text: 'D3'}
   ];
 
@@ -93,7 +91,6 @@ function knowledgeFactory() {
     {text: 'Javascript'},
     {text: 'C/C++'},
     {text: 'C#'},
-    {text: 'PHP'},
     {text: 'Lua'},
     {text: 'Haskell'}
   ];
@@ -111,7 +108,8 @@ function knowledgeFactory() {
     {text: 'Protractor'},
     {text: 'Jasmine'},
     {text: 'Unix shell'},
-    {text: 'Compass'}
+    {text: 'Compass'},
+    {text: 'Metasploit'}
   ];
 
   var _methodSkills = [
@@ -131,7 +129,33 @@ function knowledgeFactory() {
     {text: 'Sqlite'},
     {text: 'SQL'},
     {text: 'Apache'},
+    {text: 'PHP'},
     {text: 'NodeJS'}
+  ];
+
+  var _securitySkills = [
+    {text: 'XSS'},
+    {text: 'SQL Injection'},
+    {text: 'CSRF'},
+    {text: 'Directory Traversal'},
+    {text: 'Session Hijacking'}
+  ];
+
+  var _engineeringSkills = [
+    {text: 'Risk Assessment', translation:"ENGINEERING_RA"},
+    {text: 'Engineering Economics', translation:"ENGINEERING_EE"},
+    {text: 'Operation Management', translation:"ENGINEERING_OM"},
+    {text: 'Project Management', translation:"ENGINEERING_PM"},
+    {text: 'Probability and Statistics', translation:"ENGINEERING_PS"}
+  ];
+
+  var _scienceSkills = [
+    {text: 'Complex Analysis', translation:"SCIENCE_CA"},
+    {text: 'Classical Mechanics', translation:"SCIENCE_CM"},
+    {text: 'Linear Algebra', translation:"SCIENCE_LA"},
+    {text: 'Discrete Mathmatics', translation:"SCIENCE_DM"},
+    {text: 'Mathmatical Structures for Computer Science', translation:"SCIENCE_MS"},
+    {text: 'Differential Analysis', translation:"SCIENCE_DA"}
   ];
 
   /////////// PUBLIC //////////////
@@ -156,7 +180,15 @@ function knowledgeFactory() {
   function getBackendSkills() {
     return _backendSkills;
   }
-
+  function getSecuritySkills() {
+    return _securitySkills;
+  }
+  function getEngineeringSkills() {
+    return _engineeringSkills;
+  }
+  function getScienceSkills() {
+    return _scienceSkills;
+  }
 
   var factory = {
     getWordCloudWords: getWordCloudWords,
@@ -165,7 +197,10 @@ function knowledgeFactory() {
     getToolSkills: getToolSkills,
     getMethodSkills: getMethodSkills,
     getSystemSkills: getSystemSkills,
-    getBackendSkills: getBackendSkills
+    getBackendSkills: getBackendSkills,
+    getSecuritySkills: getSecuritySkills,
+    getEngineeringSkills: getEngineeringSkills,
+    getScienceSkills: getScienceSkills
   };
   return factory;
 }

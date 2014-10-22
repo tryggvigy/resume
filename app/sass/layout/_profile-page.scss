@@ -1,32 +1,35 @@
 #profilePage {
   text-align: center;
-  padding-left: $nav-map-width;
-  
+  margin-left: $nav-map-width;
+  @include bp($bp-smallScreen) {margin-left: 0;}
+
   h1 {
     font-size: 7rem;
     color: #333;
     margin: 0;
+    @include bp($bp-smallScreen) {font-size: 3rem;}
   }
   h2 {
     font-size:3.5rem;
     color: #333;
     margin: 0;
     margin-bottom: 1rem;
+    @include bp($bp-smallScreen) {font-size: 3rem;}
 
   }
   & > p {
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    @include bp($bp-smallScreen) {font-size: 1.2rem;}
   }
   .helloWorldTime {
     font-size: 1.5rem;
+    @include bp($bp-smallScreen) {font-size: 1.2rem;}
   }
 
   .wordCloud-container {
     font-family: sans-serif;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5% auto 5%;
     max-width: 500px;
 
     a {

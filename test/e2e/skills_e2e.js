@@ -2,38 +2,47 @@
 
 /* http://docs.angularjs.org/guide/dev_guide.e2e-testing */
 
-describe('PhoneCat App', function() {
 
-  it('should redirect index.html to index.html#/phones', function() {
-    browser.get('app/index.html');
-    browser.getLocationAbsUrl().then(function(url) {
-        expect(url.split('#')[1]).toBe('/phones');
-      });
+describe('Skills page', function() {
+
+  beforeEach(function() {
+    browser.get('app/index.html#/Skills');
   });
 
 
-  describe('Phone list view', function() {
+    it('should filter the skills list as user types into the search box', function() {
+      var skillsList = [];
+      skillsList['webskills'] = element.all(by.repeater('skill in skillsCtrl.webSkills'));
+      expect(skillsList['webskills'].count()).toBe(7);
 
-    beforeEach(function() {
-      browser.get('app/index.html#/phones');
-    });
+      skillsList['langskills'] = element.all(by.repeater('skill in skillsCtrl.langSkills'));
+      expect(skillsList['langskills'].count()).toBe(7);
+
+      skillsList['toolskills'] = element.all(by.repeater('skill in skillsCtrl.toolSkills'));
+      expect(skillsList['toolskills'].count()).toBe(14);
+
+      skillsList['methodskills'] = element.all(by.repeater('skill in skillsCtrl.methodSkills'));
+      expect(skillsList['methodskills'].count()).toBe(3);
+
+      skillsList['backendskills'] = element.all(by.repeater('skill in skillsCtrl.backendSkills'));
+      expect(skillsList['backendskills'].count()).toBe(6);
+
+      skillsList['systemskills'] = element.all(by.repeater('skill in skillsCtrl.systemSkills'));
+      expect(skillsList['systemskills'].count()).toBe(3);
 
 
-    it('should filter the phone list as user types into the search box', function() {
-
-      var phoneList = element.all(by.repeater('phone in phones'));
       var query = element(by.model('query'));
-
-      expect(phoneList.count()).toBe(20);
-
-      query.sendKeys('nexus');
-      expect(phoneList.count()).toBe(1);
+      query.sendKeys('java');
+      expect(skillsList['langskills'].count()).toBe(2);
+      expect(skillsList['systemskills'].count()).toBe(0);
 
       query.clear();
-      query.sendKeys('motorola');
-      expect(phoneList.count()).toBe(8);
+      query.sendKeys('AngularJS');
+      expect(skillsList['webskills'].count()).toBe(1);
+      expect(skillsList['langskills'].count()).toBe(0);
     });
 
+/*
 
     it('should be possible to control phone order via the drop down select box', function() {
 
@@ -98,4 +107,5 @@ describe('PhoneCat App', function() {
       expect(element(by.css('img.phone.active')).getAttribute('src')).toMatch(/img\/phones\/nexus-s.0.jpg/);
     });
   });
+  */
 });

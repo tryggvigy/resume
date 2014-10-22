@@ -21,3 +21,5 @@ output_style = :expanded
 line_comments = true
 
 preferred_syntax = :sass
+
+sourcemap = (environment == :production) ? false : true

@@ -1,9 +1,9 @@
 #hobbiesPage {
     margin-left: 24rem;
+    @include bp($bp-smallScreen) {margin-left: 0;}
     margin-top: 3rem;
     margin-right: 2rem;
   .hobbies-wrapper {
-    //background-color:rgba(255,255,255,0.15);
     position: relative;
     width: 100%;
     text-align: center;
@@ -22,6 +22,7 @@
       }
       p, a, span{
         text-align: justify;
+        -moz-hyphens: auto; -webkit-hyphens:auto; -ms-hyphens:auto;
       }
       a {
         text-decoration: none;
@@ -35,9 +36,20 @@
       opacity: 1;
     }
   }
-  .swim_img {background-image: url("../static/images/jpg/swimming.jpg");}
-  .diving_img {background-image: url("../static/images/jpg/diving.jpg");}
-  .spray_img {background-image: url("../static/images/jpg/stencil.jpg");}
+
+
+  .swim_img {
+    background-image: url("../static/images/jpg/swimming.jpg");
+    background-size: cover;
+  }
+  .diving_img {
+    background-image: url("../static/images/jpg/diving.jpg");
+    background-size: cover;
+  }
+  .spray_img {
+    background-image: url("../static/images/jpg/stencil.jpg");
+    background-size: cover;
+  }
 
   .rollover-pic {
     width:100%;
@@ -62,7 +74,6 @@
       margin-top: -5rem;
       float:right;
       width: 35%;
-
     }
   }
 }

@@ -11,6 +11,9 @@ function SkillsCtrl(knowledgeFactory) {
   vm.methodSkills = knowledgeFactory.getMethodSkills();
   vm.systemSkills = knowledgeFactory.getSystemSkills();
   vm.backendSkills = knowledgeFactory.getBackendSkills();
+  vm.securitySkills = knowledgeFactory.getSecuritySkills();
+  vm.engineeringSkills = knowledgeFactory.getEngineeringSkills();
+  vm.scienceSkills = knowledgeFactory.getScienceSkills();
 
   //functions
   vm.foobar = foobar;

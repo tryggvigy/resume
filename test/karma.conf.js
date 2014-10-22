@@ -8,15 +8,17 @@ module.exports = function(config){
       'app/bower_components/angular-route/angular-route.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/bower_components/angular-animate/angular-animate.js',
+      'app/bower_components/angular-translate/angular-translate.js',
+      'app/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
       'app/js/**/*.js',
-      'test/unit/**/*.js'
+      'test/unit/controllersSpec/**/*.js'
     ],
 
     autoWatch : true,
 
     frameworks: ['jasmine'],
 
-    browsers : ['Chrome'],
+    browsers : ['Chrome', 'Firefox'],
 
     plugins : [
             'karma-chrome-launcher',

@@ -22,6 +22,10 @@ var paths = {
     directivesHTML: {
         src: basePaths.src + 'partials/directivesHTML/*.html',
         dest: basePaths.dest + 'partials/directivesHTML'
+    },
+    json: {
+        src: basePaths.src + 'json/**/*.json',
+        dest: basePaths.dest + 'json/'
     }
 };
 var vendorFiles = {
@@ -68,6 +72,8 @@ gulp.task('copy', function () {
         .pipe(gulp.dest(paths.directivesHTML.dest));
     gulp.src([basePaths.src + 'static/**/*'])
         .pipe(gulp.dest(basePaths.dest + 'static/'));
+    gulp.src([paths.json.src])
+        .pipe(gulp.dest(paths.json.dest));
 });
 
 // Lint JS
@@ -87,26 +93,6 @@ gulp.task('scripts', function(){
     .pipe(gulp.dest(basePaths.dest));
 });
 
-// Convert, Concat and Minify sass files -- UNUSED
-gulp.task('css', function(){
-
-    var sassFiles = gulp.src('app/sass/main.scss')
-    .pipe(plugins.rubySass({
-        style: sassStyle, sourcemap: sourceMap, precision: 2
-    }))
-    .on('error', function(err){
-        new gutil.PluginError('CSS', err, {showStack: true});
-    });
-    return es.concat(gulp.src(vendorFiles.styles), sassFiles)
-        .pipe(isProduction ? plugins.concat('css/main.min.css') : plugins.concat('css/main.css'))
-        .pipe(plugins.autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-        .pipe(isProduction ? plugins.combineMediaQueries({
-            log: true
-        }) : gutil.noop())
-        .pipe(isProduction ? plugins.cssmin() : gutil.noop())
-        .pipe(plugins.size())
-        .pipe(gulp.dest(basePaths.dest));
-});
 
 // Create the icon font from svg
 var fontName = 'myfont';
@@ -126,12 +112,12 @@ gulp.task('iconfont', function(){
 
 // Watch Our Files
 gulp.task('watch', function() {
+    plugins.livereload.listen();
+    gulp.watch('dist/**').on('change', plugins.livereload.changed);
+    
     gulp.watch(paths.scripts.src, ['lint', 'scripts']).on('change', function(evt) {
         changeEvent(evt);
     });
-    /*gulp.watch(paths.styles.src, ['css']).on('change', function(evt) {
-        changeEvent(evt);
-    });*/
     gulp.watch(['app/index.html', paths.templates.src, 'app/static/**/*'], ['copy']).on('change', function(evt) {
         changeEvent(evt);
     });
@@ -139,4 +125,4 @@ gulp.task('watch', function() {
 
 
 // Default
-gulp.task('default', ['copy', 'iconfont', 'scripts', 'lint', /*'css',*/ 'watch']);
+gulp.task('default', ['copy', 'iconfont', 'scripts', 'lint', 'watch']);

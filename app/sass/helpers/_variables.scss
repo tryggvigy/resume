@@ -18,3 +18,12 @@ $parallex-col-height: 16rem;
 $header-bgr: "../static/images/jpg/background2.jpg";
 
 $nav-map-width: 150px;
+
+
+//media queries
+$bp-xxSmallScreen: "only screen and (max-width : 320px)";
+$bp-xSmallScreen: "only screen and (max-width : 550px)";
+$bp-smallScreen: "only screen and (max-width: 820px)";
+$bp-smallmedScreen: "only screen and (max-width: 820px)";
+$bp-mediumScreen: "only screen and (max-width: 1250px)";
+$bp-largeScreen: "only screen and (max-width: 1600px)";

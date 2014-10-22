@@ -1,15 +1,8 @@
 'use strict';
 
-ProfileCtrl.$inject = ['$scope', 'knowledgeFactory'];
+ProfileCtrl.$inject = ['knowledgeFactory'];
 
-function ProfileCtrl($scope, knowledgeFactory) {
+function ProfileCtrl(knowledgeFactory) {
   var vm = this;
-
   vm.words = knowledgeFactory.getWordCloudWords();
-
-  //functions
-  vm.foobar = foobar;
-
-  function foobar() {
-  }
 }
