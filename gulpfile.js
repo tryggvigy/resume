@@ -113,12 +113,12 @@ gulp.task('iconfont', function(){
 // Watch Our Files
 gulp.task('watch', function() {
     plugins.livereload.listen();
-    gulp.watch('dist/**').on('change', plugins.livereload.changed);
-    
+    gulp.watch('dist/**/*').on('change', plugins.livereload.changed);
+
     gulp.watch(paths.scripts.src, ['lint', 'scripts']).on('change', function(evt) {
         changeEvent(evt);
     });
-    gulp.watch(['app/index.html', paths.templates.src, 'app/static/**/*'], ['copy']).on('change', function(evt) {
+    gulp.watch(['app/index.html', paths.templates.src, 'app/static/**/*', paths.json.src], ['copy']).on('change', function(evt) {
         changeEvent(evt);
     });
 });

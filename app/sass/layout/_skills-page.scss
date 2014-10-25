@@ -6,6 +6,7 @@
 
   .searchbox {
     padding-top: 4rem;
+    @include bp($bp-smallScreen) {padding-top: 1rem;}
     .spyglass {
         -webkit-user-select: none;
         -moz-user-select: none;

@@ -13,7 +13,7 @@
           <span id="webskills" translate="SKILLS_WEB">Web</span>
         </td>
         <td class="skill_content">
-          <span ng-repeat="skill in skillsCtrl.webSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+          <span ng-repeat="skill in skillsCtrl.skills.web_skills | orderBy:'text' | filter:query">{{skill.text}}</span>
         </td>
       </tr>
 
@@ -22,7 +22,7 @@
           <span id="langskills" translate="SKILLS_LANGUAGES">Languages</span>
         </td>
         <td class="skill_content">
-          <span ng-repeat="skill in skillsCtrl.langSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+          <span ng-repeat="skill in skillsCtrl.skills.lang_skills | orderBy:'text' | filter:query">{{skill.text}}</span>
         </td>
       </tr>
 
@@ -31,7 +31,7 @@
             <span id="toolsskills" translate="SKILLS_TOOLS">Tools</span>
           </td>
           <td class="skill_content">
-            <span ng-repeat="skill in skillsCtrl.toolSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+            <span ng-repeat="skill in skillsCtrl.skills.tool_skills | orderBy:'text' | filter:query">{{skill.text}}</span>
           </td>
         </tr>
 
@@ -40,7 +40,7 @@
             <span id="methodskills" translate="SKILLS_METHODOLOGIES">Methodologies</span>
           </td>
           <td class="skill_content">
-            <span ng-repeat="skill in skillsCtrl.methodSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+            <span ng-repeat="skill in skillsCtrl.skills.method_skills | orderBy:'text' | filter:query">{{skill.text}}</span>
           </td>
         </tr>
 
@@ -49,7 +49,7 @@
             <span id="systemsbackend" translate="SKILLS_BACKEND">Backend</span>
           </td>
           <td class="skill_content">
-            <span ng-repeat="skill in skillsCtrl.backendSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+            <span ng-repeat="skill in skillsCtrl.skills.backend_skills | orderBy:'text' | filter:query">{{skill.text}}</span>
           </td>
         </tr>
 
@@ -58,7 +58,7 @@
             <span id="systemsskills" translate="SKILLS_OPERATING_SYSTEMS">Operating systems</span>
           </td>
           <td class="skill_content">
-            <span ng-repeat="skill in skillsCtrl.systemSkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+            <span ng-repeat="skill in skillsCtrl.skills.system_skills | orderBy:'text' | filter:query">{{skill.text}}</span>
           </td>
         </tr>
 
@@ -67,7 +67,7 @@
             <span id="securityskills" translate="SKILLS_SECURITY">Security</span>
           </td>
           <td class="skill_content">
-            <span ng-repeat="skill in skillsCtrl.securitySkills | orderBy:'text' | filter:query">{{skill.text}}</span>
+            <span ng-repeat="skill in skillsCtrl.skills.security_skills | orderBy:'text' | filter:query">{{skill.text}}</span>
           </td>
         </tr>
 
@@ -76,7 +76,7 @@
             <span id="engineeringskills" translate="SKILLS_ENGINEERING">Engineering</span>
           </td>
           <td class="skill_content">
-            <span ng-repeat="skill in skillsCtrl.engineeringSkills | orderBy:'text' | filter:query" translate="{{skill.translation}}">{{skill.text}}</span>
+            <span ng-repeat="skill in skillsCtrl.skills.engineering_skills | orderBy:'text' | filter:query" translate="{{skill.translation}}">{{skill.text}}</span>
           </td>
         </tr>
 
@@ -85,7 +85,7 @@
             <span id="scienceskills" translate="SKILLS_SCIENCE">Science</span>
           </td>
           <td class="skill_content">
-            <span ng-repeat="skill in skillsCtrl.scienceSkills | orderBy:'text' | filter:query" translate="{{skill.translation}}">{{skill.text}}</span>
+            <span ng-repeat="skill in skillsCtrl.skills.science_skills | orderBy:'text' | filter:query" translate="{{skill.translation}}">{{skill.text}}</span>
           </td>
         </tr>
 

@@ -1,0 +1,134 @@
+{
+  "web_skills": [{
+    "text": "HTML5"
+  }, {
+    "text": "CSS3"
+  }, {
+    "text": "Sass"
+  }, {
+    "text": "Less"
+  }, {
+    "text": "jQuery"
+  }, {
+    "text": "AngularJS"
+  }, {
+    "text": "D3"
+  }],
+  "lang_skills": [{
+    "text": "Java"
+  }, {
+    "text": "Python"
+  }, {
+    "text": "Javascript"
+  }, {
+    "text": "C/C++"
+  }, {
+    "text": "C#"
+  }, {
+    "text": "Lua"
+  }, {
+    "text": "Haskell"
+  }],
+  "tool_skills": [{
+    "text": "Grunt"
+  }, {
+    "text": "Gulp"
+  }, {
+    "text": "Visual Studios"
+  }, {
+    "text": "Eclipse"
+  }, {
+    "text": "Jenkins"
+  }, {
+    "text": "Jekyll"
+  }, {
+    "text": "Jira"
+  }, {
+    "text": "Git"
+  }, {
+    "text": "Selenium"
+  }, {
+    "text": "Protractor"
+  }, {
+    "text": "Jasmine"
+  }, {
+    "text": "Unix shell"
+  }, {
+    "text": "Compass"
+  }, {
+    "text": "Metasploit"
+  }],
+  "method_skills": [{
+    "text": "Agile"
+  }, {
+    "text": "Scrum"
+  }, {
+    "text": "TDD"
+  }],
+  "system_skills": [{
+    "text": "Windows"
+  }, {
+    "text": "Debian Linux"
+  }, {
+    "text": "Android"
+  }],
+  "backend_skills": [{
+    "text": "MySql"
+  }, {
+    "text": "Sqlite"
+  }, {
+    "text": "SQL"
+  }, {
+    "text": "Apache"
+  }, {
+    "text": "PHP"
+  }, {
+    "text": "NodeJS"
+  }],
+  "security_skills": [{
+    "text": "XSS"
+  }, {
+    "text": "SQL Injection"
+  }, {
+    "text": "CSRF"
+  }, {
+    "text": "Directory Traversal"
+  }, {
+    "text": "Session Hijacking"
+  }],
+  "engineering_skills": [{
+    "text": "Risk Assessment",
+    "translation": "ENGINEERING_RA"
+  }, {
+    "text": "Engineering Economics",
+    "translation": "ENGINEERING_EE"
+  }, {
+    "text": "Operation Management",
+    "translation": "ENGINEERING_OM"
+  }, {
+    "text": "Project Management",
+    "translation": "ENGINEERING_PM"
+  }, {
+    "text": "Probability and Statistics",
+    "translation": "ENGINEERING_PS"
+  }],
+  "science_skills": [{
+    "text": "Complex Analysis",
+    "translation": "SCIENCE_CA"
+  }, {
+    "text": "Classical Mechanics",
+    "translation": "SCIENCE_CM"
+  }, {
+    "text": "Linear Algebra",
+    "translation": "SCIENCE_LA"
+  }, {
+    "text": "Discrete Mathmatics",
+    "translation": "SCIENCE_DM"
+  }, {
+    "text": "Mathmatical Structures for Computer Science",
+    "translation": "SCIENCE_MS"
+  }, {
+    "text": "Differential Analysis",
+    "translation": "SCIENCE_DA"
+  }]
+}

@@ -1,3 +1,4 @@
+body .tooltip-inner {display:none !important}
 #hobbiesPage {
     margin-left: 24rem;
     @include bp($bp-smallScreen) {margin-left: 0;}
@@ -21,6 +22,7 @@
         text-transform: uppercase;
       }
       p, a, span{
+        display: inline;
         text-align: justify;
         -moz-hyphens: auto; -webkit-hyphens:auto; -ms-hyphens:auto;
       }

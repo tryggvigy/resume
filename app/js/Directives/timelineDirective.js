@@ -33,7 +33,7 @@ function timeLine(languageFactory) {
           height: timelineHeight,
           source: jsonPath,
           embed_id: 'my-timeline',
-          lang: "en",
+          lang: lang,
           font : "Rancho-Gudea",
           start_zoom_adjust: "1",
         });
