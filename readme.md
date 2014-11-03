@@ -1,10 +1,7 @@
 Introduction
 ============
 
-My online résumé build with angularjs
-
-Things to come
---------------
+My online résumé build with AngularJS
 
 Build requirements
 ------------------

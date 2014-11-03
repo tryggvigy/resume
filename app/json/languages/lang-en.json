@@ -13,6 +13,7 @@
     "SKILLS_WEB": "Web",
     "SKILLS_LANGUAGES": "Languages",
     "SKILLS_TOOLS": "Tools",
+    "SKILLS_FRAMEWORKS": "Frameworks",
     "SKILLS_METHODOLOGIES": "Methodoligies",
     "SKILLS_BACKEND": "Backend",
     "SKILLS_OPERATING_SYSTEMS": "Operating Systems",
@@ -34,7 +35,7 @@
 
     "HOBBIES_SWIMMING_HEADING": "Swimming",
     "HOBBIES_SWIMMING_SUB_HEADING": "Competitive",
-    "HOBBIES_SWIMMING_LEFT_CONTENT": "I have been swimming competitively since I was 10 years old. I have competed in many international tournaments. My main stroaks are breaststroke and butterfly.",
+    "HOBBIES_SWIMMING_LEFT_CONTENT": "I have been swimming competitively since I was 10 years old. I have competed in many international tournaments. My main strokes are breaststroke and butterfly.",
     "HOBBIES_SWIMMING_RIGHT_CONTENT": "When I train at maximum intensity, I go nine times a week in the pool as well as three dry-land workouts. Morning practices start at 5:30 in the morning. Swimming is a hard but rewarding sport.",
     "HOBBIES_DIVING_HEADING": "Diving",
     "HOBBIES_DIVING_SUB_HEADING": "Discovery",

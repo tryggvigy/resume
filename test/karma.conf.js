@@ -11,7 +11,7 @@ module.exports = function(config){
       'app/bower_components/angular-translate/angular-translate.js',
       'app/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
       'app/js/**/*.js',
-      'test/unit/controllersSpec/**/*.js'
+      'test/unit/**/*.js'
     ],
 
     autoWatch : true,

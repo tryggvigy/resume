@@ -8,9 +8,12 @@ function timeLine(languageFactory) {
     scope: {},
     link: function(scope, element, attrs) {
 
-      scope.$watch(function () {return languageFactory.getCurrLang();}, function(lang) {
-        initTimeline(lang);
-      });
+      scope.$watch(
+        function () {return languageFactory.getCurrLang();},
+        function(lang) {
+          initTimeline(lang);
+        }
+      );
 
       function initTimeline(lang) {
         var SMALL_SCREEN = 820, margin = 150;

@@ -4,7 +4,19 @@
 
 describe('Profile page', function() {
 
-  it('should redirect index.html to index.html#/Profile', function() {
-    expect(1).toBe(1);
+  beforeEach(function() {
+    browser.get('app/index.html#/Profile');
   });
+
+  it('should be able to change language from english to icelandic', function() {
+    browser.ignoreSynchronization = true;
+    var profileBtn = element(by.css('.icon-profile'));
+    var icelandicBtn = element.all(by.css('.languages a')).get(0);
+
+    expect(profileBtn.getText()).toEqual('Profile');
+    icelandicBtn.click();
+    expect(profileBtn.getText()).toEqual('Yfirlit');
+
+    browser.ignoreSynchronization = false;
+  })
 });

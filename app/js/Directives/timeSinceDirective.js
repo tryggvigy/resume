@@ -19,6 +19,7 @@ function timeSince($timeout, languageFactory) {
 
       function updateTime() {
           var nowDate = new Date(Date.now());
+          //total difference in milliseconds
           var dtMs = nowDate - originDate;
 
           //leap year not included

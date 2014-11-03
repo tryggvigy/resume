@@ -29,6 +29,15 @@
   }, {
     "text": "Haskell"
   }],
+  "framework_skills": [{
+    "text": "Android SDK"
+  }, {
+    "text": "OpenGL"
+  }, {
+    "text": "Selenium"
+  }, {
+    "text": "Metasploit"
+  }],
   "tool_skills": [{
     "text": "Grunt"
   }, {
@@ -46,8 +55,6 @@
   }, {
     "text": "Git"
   }, {
-    "text": "Selenium"
-  }, {
     "text": "Protractor"
   }, {
     "text": "Jasmine"
@@ -55,8 +62,6 @@
     "text": "Unix shell"
   }, {
     "text": "Compass"
-  }, {
-    "text": "Metasploit"
   }],
   "method_skills": [{
     "text": "Agile"

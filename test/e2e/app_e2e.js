@@ -11,5 +11,6 @@ describe('Résumé app', function() {
         expect(url.split('#')[1]).toBe('/Profile');
       });
     browser.ignoreSynchronization = false;
-  });
+  })
+
 });

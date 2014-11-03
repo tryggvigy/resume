@@ -37,6 +37,15 @@
 
         <tr class="skill_category">
           <td class="skill_heading">
+            <span id="frameworksskills" translate="SKILLS_FRAMEWORKS">Frameworks</span>
+          </td>
+          <td class="skill_content">
+            <span ng-repeat="skill in skillsCtrl.skills.framework_skills | orderBy:'text' | filter:query">{{skill.text}}</span>
+          </td>
+        </tr>
+
+        <tr class="skill_category">
+          <td class="skill_heading">
             <span id="methodskills" translate="SKILLS_METHODOLOGIES">Methodologies</span>
           </td>
           <td class="skill_content">
