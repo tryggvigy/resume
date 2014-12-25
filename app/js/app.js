@@ -3,7 +3,7 @@
 /* App Module */
 
 angular
-  .module('ResumeApp', ['ngRoute', 'ngAnimate', 'pascalprecht.translate'])
+  .module('ResumeApp', ['ngRoute', 'ngAnimate', 'ngAria', 'pascalprecht.translate'])
   .controller('MainCtrl', MainCtrl)
   .controller('ProfileCtrl', ProfileCtrl)
   .controller('SkillsCtrl', SkillsCtrl)

@@ -6,7 +6,7 @@
         "type":"default",
         "text":"Kíktu á ferilinn minn og mín verkefni...",
         "asset": {
-            "media":"static/images/jpg/me.jpg",
+            "media":"../dist/static/images/jpg/me.jpg",
             "caption":"Þetta er ég"
         },
         "date": [

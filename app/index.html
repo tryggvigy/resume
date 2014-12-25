@@ -10,12 +10,12 @@
 </head>
 
 
-<body ng-controller="MainCtrl as main">
-  <header>
+<body ng-controller="MainCtrl as main" role="application">
+  <header role="banner">
     <div id="resumeOwner">Tryggvi Gylfason</div>
-    <nav>
+    <nav role="navigation">
       <div class = "resumeLinks">
-          <a class="st-icon-github st-multi-color st-shape-icon" href="http://github.com/tryggvigy" target="_blank"><span></span>Github</a>
+          <a class="st-icon-github st-multi-color st-shape-icon" href="http://github.com/tryggvigy" target="_blank"><span role="img"></span>Github</a>
           <a class="st-icon-linkedin st-shape-icon" href="https://www.linkedin.com/pub/tryggvi-gylfason/90/463/806" target="_blank">LinkedIn</a>
           <a class="st-icon-pinboard st-shape-icon" href="../dist/static/assets/cv_tryggvi.pdf" target="_blank">pdf</a>
       </div>
@@ -35,7 +35,7 @@
   <aside class="nav-map">
     <ul class="nav-btns">
       <li>
-        <a class="icon icon-profile" href="#Profile"><div translate="PAGE_PROFILE">Profile</div></a>
+        <a class="icon icon-profile" href="#Profile" aria-controls="maindisp"><div translate="PAGE_PROFILE">Profile</div></a>
       </li>
       <li>
         <a class="icon icon-skills" href="#Skills"><div translate="PAGE_SKILLS">Skills</div></a>
@@ -50,13 +50,14 @@
   </aside>
 
   <main id="appwrap" class="view-container" role="main">
-    <div ng-view class="fade"></div>
+    <div ng-view class="fade" name="maindisp"></div>
   </main>
 
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
   <script src="bower_components/angular-route/angular-route.min.js"></script>
   <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.min.js"></script>
   <script src="bower_components/angular-translate/angular-translate.min.js"></script>
   <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
   <script src="../dist/static/timeline/lib/jquery-min.js"></script>

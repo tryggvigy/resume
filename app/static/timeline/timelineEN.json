@@ -6,7 +6,7 @@
         "type":"default",
         "text":"<p>Check out my career and my projects...</p>",
         "asset": {
-            "media":"static/images/jpg/me.jpg",
+            "media":"../dist/static/images/jpg/me.jpg",
             "credit":"Tryggvi Gylfason",
             "caption":"Thats me"
         },
