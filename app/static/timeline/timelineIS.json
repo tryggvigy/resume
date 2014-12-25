@@ -7,7 +7,8 @@
         "text":"Kíktu á ferilinn minn og mín verkefni...",
         "asset": {
             "media":"../dist/static/images/jpg/me.jpg",
-            "caption":"Þetta er ég"
+            "credit":"Tryggvi Gylfason",
+            "caption":""
         },
         "date": [
             {
