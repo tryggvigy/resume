@@ -1,0 +1,101 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  max-width: 1200px;
+}
+
+header {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  @include vertical-gradient(#6D6C6C, #ffffff);
+  color: #333;
+  min-height: 40px;
+  line-height: 40px;
+  font-size: 1.7rem;
+  @include bp($bp-smallScreen) {
+     position: static;
+     width: auto;
+  }
+
+  #resumeOwner {
+    float:left;
+    margin-left: 3rem;
+    font-size: 2rem;
+    @include bp($bp-smallScreen) {float: none; text-align:center; margin-left: 0;}
+  }
+
+  .languages {
+    font-size: 1.1rem;
+    float: right;
+    margin-right: 2rem;
+    @include bp($bp-smallScreen) {float: none;}
+
+    img {
+      vertical-align: middle;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    a {
+      cursor: pointer;
+      font-size: 1rem;
+      -webkit-user-select: none;  /* Chrome all / Safari all */
+      -moz-user-select: none;     /* Firefox all */
+      -ms-user-select: none;      /* IE 10+ */
+      @include sexy-button(linear-gradient(#0069a1, #003868), #FFF);
+      border: 0;
+    }
+  }
+
+  nav {
+    float: right;
+    margin-right: 2rem;
+    color: #08c;
+    .resumeLinks {
+      font-size: 1.4rem;
+      a {
+        line-height: 34px;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.nav-map {
+  z-index: 1000;
+  position: fixed;
+  top: 50px;
+  font-size: 3rem;
+  @include grid-list($nav-map-width, #b0b0b0);
+  @include bp($bp-smallScreen) {margin-top: 1.5rem; position: static;
+    //resetting the gridlist with ul rule.
+    ul{
+      width: auto;
+      //remove margin, add padding top,left to be more finger friendly.
+      li {margin: 0; padding-left: 2rem;}
+    }
+  }
+  div {
+    font-size: 1rem;
+    margin-top:-6px;
+  }
+  //TO-DO: normalize svg-images and remove this font-size hack.
+  .mask {
+    font-size: 2.5rem;
+  }
+  .bars {
+    font-size: 2.0rem;
+  }
+}
+
+#appwrap {
+    position:relative;
+    margin-top: 5%;
+    font-size: 12px;
+    color: #333;
+}
+
+.fade {
+  @include fade(1s);
+}

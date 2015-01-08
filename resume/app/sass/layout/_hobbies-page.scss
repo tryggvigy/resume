@@ -1,0 +1,81 @@
+body .tooltip-inner {display:none !important}
+#hobbiesPage {
+    margin-left: 24rem;
+    @include bp($bp-smallScreen) {margin-left: 0;}
+    margin-top: 3rem;
+    margin-right: 2rem;
+  .hobbies-wrapper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    .parallex_column{
+      height: 16rem;
+      font-family: "Volkhov";
+      font-size: 1.5rem;
+      color: black;
+      h2 {font-size: 3rem;}
+      h3 {
+        font-family: "sans-serif";
+        font-size: 1.7rem;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+      p, a, span{
+        display: inline;
+        text-align: justify;
+        -moz-hyphens: auto; -webkit-hyphens:auto; -ms-hyphens:auto;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(24, 148, 205);
+      }
+    }
+    .parallex_column:hover > .rollover-pic {
+      opacity: 0;
+    }
+    .parallex_column:hover > .rollover-content {
+      opacity: 1;
+    }
+  }
+
+
+  .swim_img {
+    background-image: url("../static/images/jpg/swimming.jpg");
+    background-size: cover;
+  }
+  .diving_img {
+    background-image: url("../static/images/jpg/diving.jpg");
+    background-size: cover;
+  }
+  .spray_img {
+    background-image: url("../static/images/jpg/stencil.jpg");
+    background-size: cover;
+  }
+
+  .rollover-pic {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index: -1;
+    width: 100%;
+    opacity: 1;
+    height: $parallex-col-height;
+    @include parallex-position();
+  }
+  .rollover-content {
+    opacity: 0;
+    width:100%;
+    @include parallex-position();
+    .rollover-left {
+      margin-top: -5rem;
+      float:left;
+      width: 35%;
+    }
+    .rollover-right {
+      margin-top: -5rem;
+      float:right;
+      width: 35%;
+    }
+  }
+}

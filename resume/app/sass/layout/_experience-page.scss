@@ -1,0 +1,9 @@
+#experiencePage {
+  .timeline-wrapper {
+      margin-left: $nav-map-width; //change?
+      @include bp($bp-smallScreen) {margin-left: 0;}
+  }
+  #my-timeline {
+    display:block;
+  }
+}

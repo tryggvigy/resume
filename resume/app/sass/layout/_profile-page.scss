@@ -1,0 +1,43 @@
+#profilePage {
+  text-align: center;
+  margin-left: $nav-map-width;
+  @include bp($bp-smallScreen) {margin-left: 0;}
+
+  h1 {
+    font-size: 7rem;
+    color: #333;
+    margin: 0;
+    @include bp($bp-smallScreen) {font-size: 3rem;}
+  }
+  h2 {
+    font-size:3.5rem;
+    color: #333;
+    margin: 0;
+    margin-bottom: 1rem;
+    @include bp($bp-smallScreen) {font-size: 3rem;}
+
+  }
+  & > p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    @include bp($bp-smallScreen) {font-size: 1.2rem;}
+  }
+  .helloWorldTime {
+    font-size: 1.5rem;
+    @include bp($bp-smallScreen) {font-size: 1.2rem;}
+  }
+
+  .wordCloud-container {
+    font-family: sans-serif;
+    margin: 5% auto 5%;
+    max-width: 500px;
+
+    a {
+      text-decoration: none;
+      @include transition(all 0.5s ease-in);
+      display: inline-block;
+      margin: 0;
+      padding: 0px 3px 0px 3px;
+    }
+  }
+}

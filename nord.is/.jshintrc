@@ -1,0 +1,8 @@
+{
+  "globalstrict": true,
+  "globals": {
+    "$": true,
+    "document": true
+    "PhotoSwipe": true
+  }
+}

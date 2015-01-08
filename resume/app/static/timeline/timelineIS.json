@@ -1,0 +1,101 @@
+{
+    "timeline":
+    {
+        "startDate":"2009,06,01",
+        "headline":"Mín leið",
+        "type":"default",
+        "text":"Kíktu á ferilinn minn og mín verkefni...",
+        "asset": {
+            "media":"../dist/static/images/jpg/me.jpg",
+            "credit":"Tryggvi Gylfason",
+            "caption":""
+        },
+        "date": [
+            {
+                "startDate":"2009,08,20",
+                "endDate":"2012,06,15",
+                "headline":"Kvennaskólinn í Reykjavík",
+                "text":"<p>Útskrifaðist frá náttúrufræðibraut.<p>",
+                "tag":"Menntun",
+                "asset":{
+                    "media":"<p>Viðurkenning fyrir hæstu einkunn í eðlisfræði.</p>",
+                    "thumbnail": "../dist/static/images/thumbnails/kvenno.gif"
+                }
+            },{
+                "startDate":"2012,08,23",
+                "endDate":"2015,06,11",
+                "headline":"Háskóli Íslands - Hugbúnaðarverkfræði",
+                "tag":"Menntun",
+                "asset":{
+                    "media":"<p>Hóf nám í Hugbúnaðarverkfræði við Háskóla Íslands.</p>",
+                    "thumbnail": "../dist/static/images/thumbnails/HI.jpg"
+                }
+            },{
+                "startDate":"2012,11,15",
+                "endDate":"2013,05,10",
+                "headline":"Kennari hjá Nóbel námsbúðum.",
+                "tag":"Vinna",
+                "asset":{
+                      "media":"<p>Kenndi nemendum í Kvennaskólanum eðlisfræði og stærðfræði.</p>",
+                      "thumbnail": "../dist/static/images/thumbnails/nobel.png"
+                }
+            },{
+                "startDate":"2013,05,10",
+                "endDate":"2013,08,20",
+                "headline":"Norðurál - Upplýsingatæknideild",
+                "text":"<p>Meðlimur í upplýsingatæknideild Norðuráls.</p>",
+                "tag":"Sumarstarf",
+                "asset":{
+                    "media":"<p>Ýmis sysadmin störf, vakt á ticket system (spicework), uppsetning véla.</p><p>Ég vann einnig að þróun MVC gagnagrunnslausnar fyrir upplýsingar um vélar fyrirtækisins.</p>",
+                    "thumbnail": "../dist/static/images/thumbnails/nordural.png"
+                }
+            },{
+                "startDate":"2014,05,10",
+                "endDate":"2014,08,30",
+                "headline":"Marel - Sumarstarfsmaður.",
+                "text":"<p>Þróun veflausna.</p><p>Teymið vann eftir verkferlum eins og scrum og TDD.</p>",
+                "tag":"Sumarstarf",
+                "asset":{
+                    "media":"<p>Vann við hönnun, skjölun og þróun ýmissa debugging tóla.</p><p>Vann að útfærslu nákvæms útlits vefviðmóts skv. ströngum reglum.</p><p>Mikil vinna í websocket, svg (D3.js) og lógískri javascript forritun.</p>",
+                    "thumbnail": "../dist/static/images/thumbnails/marel.jpg"
+                }
+            },{
+                "startDate":"2014,08,23",
+                "endDate":"2014,12,15",
+                "headline":"Dæmatímakennari - Vefforritun.",
+                "tag":"Vinna",
+                "asset":{
+                  "media":"<p>Dæmatímakennsla í áfanganum <a href='https://ugla.hi.is/kennsluskra/index.php?tab=nam&chapter=namskeid&id=08715320146' target='_blank'>TÖL306G Vefforritun</a></p>",
+                  "thumbnail": "../dist/static/images/thumbnails/HI.jpg"
+                }
+            },{
+                "startDate":"2014,10,10",
+                "endDate":"now",
+                "headline":"Binoculars",
+                "text": "<a href='http://tryggvi.me/Binoculars/' target='_blank'>Binoculars</a><p>Persónulegt Verkefni.</p><p>Javascript library sem fangar upplýsingar.</p>",
+                "tag":"Verkefni",
+                "asset":{
+                  "media":"../dist/static/images/png/night.png",
+                  "thumbnail": "../dist/static/images/night/nord.png"
+                }
+            },{
+                "startDate":"2014,11,20",
+                "endDate":"2015,01,10",
+                "headline":"nord.is",
+                "text": "<p>Hönnun á framenda <a href='https://notendur.hi.is/~trg8/myProjects/nord-material/dist/' target='_blank'>nord.is</a></p><p>Enn í þróun.</p>",
+                "tag":"Verkefni",
+                "asset":{
+                  "media":"../dist/static/images/png/nord.png",
+                  "thumbnail": "../dist/static/images/png/nord.png"
+                }
+            }
+        ],
+        "era": [
+            {
+                "startDate":"2009,06,01",
+                "endDate":"2015,08,01",
+                "tag":"Sumarvinna"
+            }
+        ]
+    }
+}

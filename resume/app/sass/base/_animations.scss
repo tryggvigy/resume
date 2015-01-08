@@ -1,0 +1,30 @@
+.wordCloudAnim {
+  @include text-shadow(#878787 2px -2px 4px);
+  @include transform(scale(1.2));
+}
+
+@mixin fade($timeout) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 1;
+
+  &.ng-enter,
+  &.ng-leave {
+    -webkit-transition: all $timeout ease;
+    -moz-transition: all $timeout ease;
+    -o-transition: all $timeout ease;
+    transition: all $timeout ease;
+  }
+  &.ng-enter {
+      opacity: 0;
+  }
+  &.ng-enter-active {
+      opacity: 1;
+  }
+  &.ng-leave-active {
+      opacity: 0;
+  }
+}

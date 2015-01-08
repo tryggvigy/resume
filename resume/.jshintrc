@@ -1,0 +1,34 @@
+{
+  "globalstrict": true,
+  "validthis": true,
+  "browser": true,
+  "devel": true,
+  "globals": {
+    "jQuery": false,
+    "angular": false,
+    "$": true,
+    "browser": false,
+    "element": false,
+    "by": false,
+
+    "describe": false,
+    "beforeEach": false,
+    "it": false,
+    "expect": false,
+
+    "$scope" : true,
+    "ProfileCtrl" : true,
+    "MainCtrl": true,
+    "SkillsCtrl": true,
+    "ExperienceCtrl": true,
+    "HobbiesCtrl": true,
+
+    "animateOnHover": true,
+    "timeSince": true,
+    "timeLine": true,
+    "createStoryJS": true,
+
+    "knowledgeFactory": true,
+    "languageFactory": true
+  }
+}
